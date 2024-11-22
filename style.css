@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 100vh;
+}
+
+html {
+    font-family: "Montserrat", sans-serif;
+}
+
+header {
+    width: 100%;
+}
+
+.header {
+    background-image: url(./img/tlo.jpg);
+    background-position: center;
+    background-size: cover;
+    padding: 50px;
+    text-align: center;
+    color: #48484a;
+}
+
+.header h1 {
+    text-shadow: 1px 1px 5px white;
+    font-size: 38px;
+}
+
+.search {
+    background-color: #f2f2f2;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.search div {
+    height: 28px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.search input {
+    font-size: 16px;
+    padding: 5px;
+    border: none;
+    border-radius: 6px 0 0 6px;
+    caret-color: #eb6e4b;
+}
+
+.search button {
+    background-color: rgba(72,72,74,.85);
+    border-color: rgba(72,72,74,.85);
+    border: none;
+    color: #f2f2f2;
+    border-radius: 0 6px 6px 0;
+    padding: 5px 10px;
+    height: 28px;
+}
+
+.error {
+    color: darkred;
+}
+
+.weather_info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.temp_info {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.description_color {
+    color: #ffffff;
+    background-color: #eb6e4b;
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+
+.weather_info ~ p {
+    padding: 5px 0;
+}
+
+.weather_info ~ p span{
+    font-weight: bold;
+}
+
+.pollution {
+    margin-top: 20px;
+}
+
+.pollution_info {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.pollution_img {
+    border-radius:50%;
+    margin-right: 10px;
+    transition: 0.5s;
+}
+
+footer {
+    background-color: #48484a;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+}
+
+footer span {
+    color: #eb6e4b
+}

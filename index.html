@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplikacja pogodowa</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header>
+        <section class="header">
+            <h1>Aplikacja pogodowa</h1>
+        </section>
+        <section class="search">
+            <div>
+                <input type="text" name="" id="" placeholder="podaj nazwę miasta">
+                <button>Sprawdź pogodę</button>
+            </div>
+            <p class="error"></p>
+        </section>
+    </header>
+    <main>
+        <section class="weather">
+            <p class="date"></p>
+            <h2 class="city_name"></h2>
+            <div class="weather_info">
+                <div class="temp_info">
+                    <img src="" alt="" class="weather_img">
+                    <p class="temp"></p>
+                </div>
+                <p class="description"></p>
+            </div>
+            <p>Temperatura odczuwalna: <span class="feels_like"></span></p>
+            <p>Ciśnienie: <span class="pressure"></span></p>
+            <p>Wilgotność: <span class="humidity"></span></p>
+            <p>Prędkość wiatru: <span class="wind_speed"></span></p>
+            <p>Zachmurzenie: <span class="clouds"></span></p>
+            <p>Widoczność: <span class="visibility"></span></p>
+        </section>
+        <section class="pollution">
+            <h3>Zanieczyszczenie powietrza</h3>
+            <div class="pollution_info">
+                <img src="./img/pm25.png" alt="" class="pollution_img">
+                <p class="pollution_value"></p>
+                <p>&micro;g/m<sup>3</sup></p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>Projekt <span>WSB Merito</span> Toruń-Bydgoszcz 2024</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="./maint-obfuscated.js"></script>
+</body>
+</html>
